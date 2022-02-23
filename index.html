@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+        body {
+            background-color: black;
+        }
+
+        canvas {
+            padding: 0;
+            margin: auto;
+            display: block;
+        }
+
+        img {
+            display: none;
+        }
+    </style>
+
+    <img src="images/Background.png" alt="" id="bg">
+    <img src="images/Rocks.png" alt="" id="rocks">
+    <img src="images/Ground.png" alt="" id="ground">
+    <img src="images/GroundFront.png" alt="" id="ground_front">
+    <img src="images/hero/hero_walk.png" alt="" id="hero">
+    <img src="images/hero/hero_atk.png" alt="" id="hero_atk">
+    <img src="images/npcs/eye/walk.png" id="eye">
+    <img src="images/npcs/eye/atk.png" id="eye_atk">
+    <img src="images/npcs/eye/death.png" id="eye_death">
+    <img src="images/npcs/goblin/walk.png" id="goblin">
+    <img src="images/npcs/goblin/atk.png" id="goblin_atk">
+    <img src="images/npcs/goblin/death.png" id="goblin_death">
+    <img src="images/npcs/mushroom/walk.png" id="mushroom">
+    <img src="images/npcs/mushroom/atk.png" id="mushroom_atk">
+    <img src="images/npcs/mushroom/death.png" id="mushroom_death">
+    <img src="images/npcs/skeleton/walk.png" id="skeleton">
+    <img src="images/npcs/skeleton/atk.png" id="skeleton_atk">
+    <img src="images/npcs/skeleton/death.png" id="skeleton_death">
+    <img src="images/npcs/bosses/executioner/idle.png" id="executioner">
+    <img src="images/npcs/bosses/executioner/atk.png" id="executioner_atk">
+    <img src="images/npcs/bosses/executioner/death.png" id="executioner_death">
+    <img src="images/npcs/bosses/executioner/skill1.png" id="executioner_skill1">
+    <img src="images/npcs/bosses/executioner/skill1_vfx.png" id="executioner_skill1_vfx">
+    <img src="images/npcs/bosses/executioner/skill2.png" id="executioner_skill2">
+    <img src="images/npcs/bosses/executioner/skill2_vfx.png" id="executioner_skill2_vfx">
+    <img src="images/slash_blood.png" id="slash_blood">
+    <img src="images/game_over.png" id="game_over">
+    <img src="images/spark_logo.png" id="spark_logo">
+    <img src="images/Background_complete.png" id="bgc">
+    <img src="images/start.png" id="start_screen">
+
+    <audio loop id="main_theme">
+        <source src="audio/monsoon.mp4" type="audio/mpeg">
+    </audio>
+    <audio loop id="boss_theme">
+        <source src="audio/boss_music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="slash">
+        <source src="audio/effects/slash.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="get_hit">
+        <source src="audio/effects/get_hit.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="npc_blood">
+        <source src="audio/effects/npc_blood.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="npc_bones">
+        <source src="audio/effects/npc_bones.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="exe_slash_audio">
+        <source src="audio/effects/exe_slash.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="exe_skill1_audio">
+        <source src="audio/effects/exe_skill1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="exe_skill2_audio">
+        <source src="audio/effects/exe_skill2.mp3" type="audio/mpeg">
+    </audio>
+    <canvas id="canvas" width="960" height="480"></canvas>
+
+</body>
+
+<script src="main_script.js"></script>
+
+</html>
